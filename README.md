@@ -49,3 +49,9 @@ In this project, we need to use Pandas, Numpy, and PyTorch with Python 3.5.0 or 
 
 ## Usage and result
  <p align="center"><img src="images/result.png"></p>
+
+## Contributor
+
+[Min Che](https://www.linkedin.com/in/min-che/)
+
+[Eileen Wang](https://www.linkedin.com/in/eileen-wang-ba8048159/) 

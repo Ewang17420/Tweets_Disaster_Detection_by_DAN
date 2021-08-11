@@ -28,8 +28,10 @@
 The goal of this project is to classify disaster related tweets by implenmenting Deep Average Neural Network with PyTorch. The dataset is from a [Kaggle compitition](https://www.kaggle.com/c/nlp-getting-started/overview). 
 
 ### What is DAN?
-DAN stands for Deep Averaging Network. 
+ 
 ![architecture](images/dan.png)
+
+DAN stands for Deep Averaging Network. It is a simple Neural Network that learns the compositionality of the inputs. The architecture of DAN looks like the picture above. First of all, it take the vector average of the input embeddings, then pass it through 1 or more feed-forward layers. Intuition being that each layer will increasingly magnify small but meaningful differences in the word embedding average. Fianlly, perform Linear classification on final layer.
 
 ## Getting Started
 

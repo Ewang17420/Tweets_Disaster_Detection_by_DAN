@@ -48,4 +48,4 @@ In this project, we need to use Pandas, Numpy, and PyTorch with Python 3.5.0 or 
   ```
 
 ## Usage and result
- <p align="center"><img src="images/result"></p>
+ <p align="center"><img src="images/result.png"></p>

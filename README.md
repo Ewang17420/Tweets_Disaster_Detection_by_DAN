@@ -1,4 +1,4 @@
-# Tweets_Disaster_Detection_by_DAN
+# Tweets Disaster Detection by DAN
 
 
 <!-- TABLE OF CONTENTS -->
@@ -25,10 +25,10 @@
 </details>
 
 ## About The Project
-Classifying tweets by using Deep Average Neural Network
+The goal of this project is to classify disaster related tweets by implenmenting Deep Average Neural Network with PyTorch. The dataset is from a [Kaggle compitition](https://www.kaggle.com/c/nlp-getting-started/overview). 
 
 ### What is DAN?
-DAN
+DAN stands for Deep Averaging Network. 
 
 ## Getting Started
 

@@ -37,6 +37,15 @@ DAN stands for Deep Averaging Network. It is a simple Neural Network that learns
 
 ### Prerequisites
 
+In this project, we need to use Pandas, Numpy, and PyTorch with Python 3.5.0 or greater
+
+
 ### Installation
 
+* Pytorch
+  ```sh
+  pip3 install torch torchvision
+  ```
+
 ## Usage and result
+ <p align="center"><img src="images/result"></p>

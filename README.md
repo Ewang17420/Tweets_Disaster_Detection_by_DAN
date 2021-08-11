@@ -29,7 +29,7 @@ The goal of this project is to classify disaster related tweets by implenmenting
 
 ### What is DAN?
 DAN stands for Deep Averaging Network. 
-![architecture][dan.png]
+![architecture](dan.png)
 
 ## Getting Started
 

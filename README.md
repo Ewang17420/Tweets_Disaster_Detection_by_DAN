@@ -29,7 +29,7 @@ The goal of this project is to classify disaster related tweets by implenmenting
 
 ### What is DAN?
  
- <p align="center">![architecture](images/dan.png)</p>
+ <p align="center"><img src="images/dan.png"></p>
 
 DAN stands for Deep Averaging Network. It is a simple Neural Network that learns the compositionality of the inputs. The architecture of DAN looks like the picture above. First of all, it take the vector average of the input embeddings, then pass it through 1 or more feed-forward layers. Intuition being that each layer will increasingly magnify small but meaningful differences in the word embedding average. Fianlly, perform Linear classification on final layer.
 

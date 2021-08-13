@@ -39,7 +39,7 @@ In this notebook, we built a model that predicts which Tweets are about real dis
 
 ### What is DAN?
  
- <p align="center"><img src="images/dan.png"></p>
+ <p align="center"><img src="images/DAN.png"></p>
 
 DAN stands for Deep Averaging Network. It is a simple Neural Network that learns the compositionality of the inputs. The architecture of DAN looks like the picture above. First of all, it take the vector average of the input word embeddings, then pass it through 1 or more feed-forward layers. Intuition being that each layer will increasingly magnify small but meaningful differences in the word embedding average. Fianlly, perform Linear classification on final layer. Despite its simplicity, DAN outperforms many other more sophisticated models which are designed to explicitly learn the compositionality of texts. For example, DAN outperforms syntactic models on datasets with high syntactic variance. So we first devoted our efforts mainly trying this architecture.
 

@@ -46,17 +46,17 @@ DAN stands for Deep Averaging Network. It is a simple Neural Network that learns
 
 ### Method
 
-After checking there is no imbalance issue, we did some preprocessing and feature engineering, getting the words from twitter text into clear and normalized format. For word representation, we used pretrained embeddings (Stanford GloVe) instead of word2vec model consideing that the dataset is relatively small. As for model building, we created a 3-layer Deep Averaging Neural Network. It views text as a bag of words and takes the average of the word embeddings as the representation of the twitter text. 
+After checking there is no imbalance issue, we did some preprocessing and feature engineering, getting the words from twitter text into clear and normalized format. For word representation, we used pretrained embeddings (Stanford GloVe) instead of word2vec model consideing that the dataset is relatively small. By doing this, we can exploit some transfer learning from the pretrained embeddings. As for model building, we created a 3-layer Deep Averaging Neural Network. It views text as a bag of words and takes the average of the word embeddings as the representation of the twitter text. 
 
 ### Further steps
 
-We think that there are still a lot of methods to solve this problem. For example, we want to try deeper neural network with current model.  It may need more computational resource, and increasing the number of hidden layers might improve the accuracy or might not, it depends on the complexity of the problem, but it still worth a try. Or we can also try RNN/CNN-based model like GRU or LSTM. Another possible better solution is to create text features with bag-of-ngrams. Bag of n-grams can be more informative than bag of words because they capture more context around each word. Finally, we can try another pretrained embeddings like standford twitter glove or pretained model like BERT.
+We think that there are still a lot of methods to solve this problem. For example, we want to try deeper neural network with current model.  It may need more computational resource, and increasing the number of hidden layers might improve the accuracy or might not, it depends on the complexity of the problem, but it still worth a try. Or we can also try RNN/CNN-based model like GRU or LSTM. Another possible better solution is to create text features with bag-of-ngrams. Bag of n-grams can be more informative than bag of words because they capture more context around each word. Finally, we can try other pretrained embeddings like standford twitter glove or directly exploit pretained model like BERT.
 
 ## Getting Started
 
 ### Prerequisites
 
-In this project, we need to use Pandas, Numpy, and PyTorch with Python 3.5.0 or greater
+In this project, we need to use Pandas, Numpy, and PyTorch with Python 3.5.0 or greater.
 
 
 ### Installation

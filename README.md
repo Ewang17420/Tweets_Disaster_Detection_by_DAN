@@ -46,7 +46,7 @@ DAN stands for Deep Averaging Network. It is a simple Neural Network that learns
 
 ### Method
 
-After checking there is no imbalance issue, we did some preprocessing and feature engineering, getting the words from twitter text into clear and normalized format. For word representation, we used pretrained embeddings (Stanford GloVe) instead of word2vec model consideing that the dataset is relatively small. By doing this, we can exploit some transfer learning from the pretrained embeddings. As for model building, we created a 3-layer Deep Averaging Neural Network. It views text as a bag of words and takes the average of the word embeddings as the representation of the twitter text. 
+After checking there is no imbalance issue, we did some preprocessing and feature engineering, getting the words from twitter text into clear and normalized format. For word representation, we used pretrained embeddings ([Stanford GloVe](https://nlp.stanford.edu/projects/glove/)) instead of word2vec model consideing that the dataset is relatively small. By doing this, we can exploit some transfer learning from the pretrained embeddings. As for model building, we created a 3-layer Deep Averaging Neural Network. It views text as a bag of words and takes the average of the word embeddings as the representation of the twitter text. 
 
 ### Further steps
 

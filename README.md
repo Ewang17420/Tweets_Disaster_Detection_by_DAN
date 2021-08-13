@@ -8,7 +8,13 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#what-is-DAN">What is DAN?</a></li>
+        <li><a href="#project-goal">Project Goal</a></li>
+      </ul>
+      <ul>
+        <li><a href="#dataset">Dataset</a></li>
+      </ul>
+      <ul>
+        <li><a href="#what-is-dan">What is DAN?</a></li>
       </ul>
       <ul>
         <li><a href="#method">Method</a></li>
@@ -31,11 +37,14 @@
 </details>
 
 ## About The Project
-The goal of this project is to classify disaster related tweets by implenmenting Feed-Forward Neural Network, mainly Deep Average Neural Network with PyTorch. The dataset is from a [Kaggle compitition](https://www.kaggle.com/c/nlp-getting-started/overview). The dataset have 7,613 datapoints in traing set with 3,271 real disaster tweets and 4,342 normal tweets. The dataset includes two column:
-  - context of tweets (string)  
-  - disaster or not (boolean)  
 
-In this notebook, we built a model that predicts which Tweets are about real disasters and which one’s are not. We hope the result can help with deliver reliable information of emergency.
+### Project Goal
+In this project, we built a model that predicts which Tweets are about real disasters and which one’s are not. We hope the result can help with delivering reliable information of emergency. We realized this classification by implenmenting Feed-Forward Neural Network, mainly Deep Average Neural Network with PyTorch.
+
+### Dataset
+The dataset is from a [Kaggle compitition](https://www.kaggle.com/c/nlp-getting-started/overview). The dataset have 7,613 datapoints in traing set with 3,271 real disaster tweets and 4,342 normal tweets. The dataset includes two column:
+  - context of tweets (string)  
+  - disaster or not (boolean)
 
 ### What is DAN?
  
@@ -48,7 +57,7 @@ DAN stands for Deep Averaging Network. It is a simple Neural Network that learns
 
 After checking there is no imbalance issue, we did some preprocessing and feature engineering, getting the words from twitter text into clear and normalized format. For word representation, we used pretrained embeddings ([Stanford GloVe](https://nlp.stanford.edu/projects/glove/)) instead of word2vec model consideing that the dataset is relatively small. By doing this, we can exploit some transfer learning from the pretrained embeddings. As for model building, we created a 3-layer Deep Averaging Neural Network. It views text as a bag of words and takes the average of the word embeddings as the representation of the twitter text. 
 
-### Further steps
+### Further Steps
 
 We think that there are still a lot of methods to solve this problem. For example, we want to try deeper neural network with current model.  It may need more computational resource, and increasing the number of hidden layers might improve the accuracy or might not, it depends on the complexity of the problem, but it still worth a try. Or we can also try RNN/CNN-based model like GRU or LSTM. Another possible better solution is to create text features with bag-of-ngrams. Bag of n-grams can be more informative than bag of words because they capture more context around each word. Finally, we can try other pretrained embeddings like standford twitter glove or directly exploit pretained models like BERT.
 
